@@ -27,12 +27,3 @@ body {
   color: var(--text-primary);
   transition: background-color 300ms ease, color 300ms ease;
 }
-
-@layer base {
-  * {
-    @apply border-border-light dark:border-border-dark;
-  }
-  body {
-    @apply bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark;
-  }
-}
