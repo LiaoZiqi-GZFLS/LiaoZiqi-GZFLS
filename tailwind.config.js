@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      gridTemplateColumns: {
+        '53': 'repeat(53, minmax(0, 1fr))',
+      },
       colors: {
         primary: {
           light: '#2563eb',
