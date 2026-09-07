@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 import { profile } from '@/config/profile';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { href: '#skills', label: '技能' },
@@ -15,6 +16,7 @@ const navItems = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +70,40 @@ export function Navigation() {
             ))}
           </div>
           
-          <ThemeToggle />
+          <div className="flex items-center gap-4">
+            <button
+              className="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+            <ThemeToggle />
+          </div>
         </div>
       </div>
+      
+      {/* Mobile menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+          <div className="px-4 py-3 space-y-3">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`block text-sm font-medium transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? 'text-blue-600 dark:text-blue-400'
+                    : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
