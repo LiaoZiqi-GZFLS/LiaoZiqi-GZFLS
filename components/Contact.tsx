@@ -1,5 +1,5 @@
 import { profile } from '@/config/profile';
-import { Github, BookOpen, Mail } from 'lucide-react';
+import { Github, BookOpen, Mail, MapPin } from 'lucide-react';
 
 export function Contact() {
   return (
