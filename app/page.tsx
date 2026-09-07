@@ -2,6 +2,7 @@
 import { Skills } from '@/components/Skills';
 import { Projects } from '@/components/Projects';
 import { Contributions } from '@/components/Contributions';
+import { Blog } from '@/components/Blog';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contributions />
+      <Blog />
     </main>
   );
 }
