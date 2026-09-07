@@ -1,6 +1,4 @@
-﻿import useSWR from 'swr';
-
-interface BlogPost {
+﻿interface BlogPost {
   title: string;
   link: string;
   pubDate: string;
