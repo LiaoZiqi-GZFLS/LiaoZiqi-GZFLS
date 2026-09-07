@@ -13,7 +13,13 @@ interface GitHubRepo {
   updated_at: string;
 }
 
-const fetcher = (url: string) => fetch(url).then(res => res.json());
+const fetcher = async (url: string) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`GitHub API error: ${res.status}`);
+  }
+  return res.json();
+};
 
 export function useGitHubRepos(username: string) {
   const { data, error, isLoading } = useSWR<GitHubRepo[]>(
