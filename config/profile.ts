@@ -7,6 +7,8 @@ export const profile = {
     github: 'https://github.com/LiaoZiqi-GZFLS',
     blog: 'https://www.sustlzq.cn',
     email: 'your-email@example.com',
+    csdn: 'https://blog.csdn.net/LiaoZiqi2006',
+    bilibili: 'https://space.bilibili.com/3461564195670711',
   },
   skills: {
     frontend: ['React', 'Vue', 'TypeScript', 'Tailwind CSS', 'Next.js'],

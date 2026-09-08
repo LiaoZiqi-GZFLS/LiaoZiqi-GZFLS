@@ -1,5 +1,5 @@
 import { profile } from '@/config/profile';
-import { Github, BookOpen, Mail } from 'lucide-react';
+import { Github, BookOpen, Mail, Code, Tv } from 'lucide-react';
 
 export function Contact() {
   return (
@@ -34,6 +34,26 @@ export function Contact() {
           >
             <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
             <span>博客</span>
+          </a>
+
+          <a
+            href={profile.social.csdn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            <Code className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span>CSDN</span>
+          </a>
+
+          <a
+            href={profile.social.bilibili}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            <Tv className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span>bilibili</span>
           </a>
         </div>
       </div>
