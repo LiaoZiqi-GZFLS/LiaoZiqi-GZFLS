@@ -27,7 +27,7 @@
 
 ## 🧰 Tech Stack
 
-[![skills](https://skillicons.dev/icons?i=python,pytorch,go,rust,verilog,linux,git,githubactions,docker,vscode&theme=dark)](https://skillicons.dev)
+[![skills](https://skillicons.dev/icons?i=python,pytorch,go,rust,c,cpp,java,typescript,verilog,linux,git,githubactions,docker,vscode&theme=dark)](https://skillicons.dev)
 
 ## 📊 GitHub Stats
 
