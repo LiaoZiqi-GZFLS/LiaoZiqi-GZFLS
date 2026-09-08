@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 import { profile } from '@/config/profile';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { href: '#skills', label: '技能' },
@@ -15,6 +16,7 @@ const navItems = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +70,41 @@ export function Navigation() {
             ))}
           </div>
           
-          <ThemeToggle />
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              onClick={() => setMobileOpen((v) => !v)}
+              aria-label="切换导航菜单"
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* 移动端下拉菜单 */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+          <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-2">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30'
+                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

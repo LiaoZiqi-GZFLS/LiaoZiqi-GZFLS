@@ -1,4 +1,5 @@
 ﻿import { profile } from '@/config/profile';
+import { basePath } from '@/lib/basePath';
 import Image from 'next/image';
 import { Github, BookOpen, Mail } from 'lucide-react';
 
@@ -8,7 +9,7 @@ export function Hero() {
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-8">
           <Image
-            src={profile.avatar}
+            src={`${basePath}${profile.avatar}`}
             alt={profile.name}
             width={150}
             height={150}

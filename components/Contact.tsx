@@ -1,7 +1,24 @@
+'use client';
+
+import { useState } from 'react';
 import { profile } from '@/config/profile';
-import { Github, BookOpen, Mail, MapPin } from 'lucide-react';
+import { Github, BookOpen, Mail } from 'lucide-react';
 
 export function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`来自 ${name} 的留言`);
+    const body = encodeURIComponent(`${message}\n\n—— ${name} (${email})`);
+    window.location.href = `mailto:${profile.social.email}?subject=${subject}&body=${body}`;
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-4">
@@ -49,11 +66,14 @@ export function Contact() {
           
           <div>
             <h3 className="text-xl font-semibold mb-4">发送消息</h3>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <input
                   type="text"
                   placeholder="您的姓名"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800"
                 />
               </div>
@@ -61,6 +81,9 @@ export function Contact() {
                 <input
                   type="email"
                   placeholder="您的邮箱"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800"
                 />
               </div>
@@ -68,6 +91,9 @@ export function Contact() {
                 <textarea
                   placeholder="您的消息"
                   rows={4}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800"
                 ></textarea>
               </div>

@@ -4,7 +4,7 @@ export const profile = {
   bio: '热爱技术，专注于 Web 开发和 DevOps。喜欢探索新技术，分享实践经验。',
   avatar: '/images/avatar.svg',
   social: {
-    github: 'https://github.com/LiaoZiqi',
+    github: 'https://github.com/LiaoZiqi-GZFLS',
     blog: 'https://www.sustlzq.cn',
     email: 'your-email@example.com',
   },
