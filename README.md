@@ -26,16 +26,11 @@
 
 ## 📊 GitHub Stats
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=LiaoZiqi-GZFLS&show_icons=true&theme=tokyonight&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=LiaoZiqi-GZFLS&show_icons=true&theme=default&hide_border=true">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=LiaoZiqi-GZFLS&show_icons=true&theme=tokyonight&hide_border=true">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LiaoZiqi-GZFLS&layout=compact&theme=tokyonight&hide_border=true&hide=html,css">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LiaoZiqi-GZFLS&layout=compact&theme=default&hide_border=true&hide=html,css">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LiaoZiqi-GZFLS&layout=compact&theme=tokyonight&hide_border=true&hide=html,css">
-</picture>
+<p align="center">
+  <img src="https://img.shields.io/github/followers/LiaoZiqi-GZFLS?style=for-the-badge&label=Followers&color=181717" alt="GitHub followers">
+  <img src="https://img.shields.io/github/stars/LiaoZiqi-GZFLS/nscscc2026-loongarch-cpu?style=for-the-badge&label=Stars&color=181717" alt="GitHub stars">
+  <img src="https://img.shields.io/github/last-commit/LiaoZiqi-GZFLS/LiaoZiqi-GZFLS?style=for-the-badge&label=Last%20commit&color=181717" alt="Last commit">
+</p>
 
 ## 🐍 Contribution Snake
 
