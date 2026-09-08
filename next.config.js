@@ -5,6 +5,9 @@ const nextConfig = {
   basePath: '/LiaoZiqi-GZFLS',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      { protocol: 'https', hostname: 'avatars.githubusercontent.com' },
+    ],
   },
   trailingSlash: true,
 };

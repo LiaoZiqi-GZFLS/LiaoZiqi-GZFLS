@@ -2,7 +2,7 @@ export const profile = {
   name: 'Liao Ziqi',
   title: 'Full Stack Developer',
   bio: '热爱技术，专注于 Web 开发和 DevOps。喜欢探索新技术，分享实践经验。',
-  avatar: '/images/avatar.svg',
+  avatar: 'https://avatars.githubusercontent.com/u/108562065?v=4',
   social: {
     github: 'https://github.com/LiaoZiqi-GZFLS',
     blog: 'https://www.sustlzq.cn',

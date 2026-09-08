@@ -4,12 +4,15 @@ import Image from 'next/image';
 import { Github, BookOpen, Mail } from 'lucide-react';
 
 export function Hero() {
+  const avatarSrc = profile.avatar.startsWith('/')
+    ? `${basePath}${profile.avatar}`
+    : profile.avatar;
   return (
     <section className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-8">
           <Image
-            src={`${basePath}${profile.avatar}`}
+            src={avatarSrc}
             alt={profile.name}
             width={150}
             height={150}
