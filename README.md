@@ -3,6 +3,11 @@
 
 # 👋 Hi, I'm LiaoZiqi
 
+<p align="center">
+  <a href="https://liaoziqi-gzfls.github.io/LiaoZiqi-GZFLS/"><img src="https://img.shields.io/badge/GitHub%20Pages-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5-181717?style=for-the-badge&logo=github" alt="个人主页"></a>
+  <a href="https://www.sustlzq.cn"><img src="https://img.shields.io/badge/Blog-%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1f6feb?style=for-the-badge&logo=rss" alt="我的博客"></a>
+</p>
+
 🎓 南方科技大学 · 计算机系统能力竞赛 **龙芯杯** 参赛队员（队：夜神骇客 · T2026143250012561）
 🔬 方向：**CPU 微架构** / **GPU 加速微磁学仿真** / **LLM 驱动的 GUI 智能体**
 🛠️ 方法论：先建模量化，再决策实现 —— benchmark first, implement second.
