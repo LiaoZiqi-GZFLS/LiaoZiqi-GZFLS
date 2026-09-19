@@ -17,7 +17,7 @@
 | 项目 | 说明 |
 |---|---|
 | [nscscc2026-loongarch-cpu](https://github.com/LiaoZiqi-GZFLS/nscscc2026-loongarch-cpu) | 2026 龙芯杯 LA32R **三发射乱序超标量**处理器核（SpinalHDL），自研分支预测与前递网络 |
-| [GPU 微磁学仿真器](https://github.com/LiaoZiqi-GZFLS?tab=repositories) | Go 实现的 GPU 加速 micromagnetic simulator（物理 × ML 数据引擎方向）|
+| [GPU 微磁学仿真器](https://github.com/LiaoZiqi-GZFLS/Mumax3) | Go 实现的 GPU 加速 micromagnetic simulator（物理 × ML 数据引擎方向）|
 | [Primitive-CUA](https://github.com/LiaoZiqi-GZFLS/Primitive-CUA) | LLM 驱动的桌面自动化智能体（CUA），含任务耗时与 token 统计 |
 | [Agent-View](https://github.com/LiaoZiqi-GZFLS/Agent-View) | 屏幕像素 → 文本标记：OCR + 元素检测 + grounding，面向纯文本 LLM 的 Windows 感知层 |
 | [Caelum-Agent](https://github.com/LiaoZiqi-GZFLS/Caelum-Agent) | CUA Agent 框架（fork 演进自 Caelum-Agent-Pro）|
